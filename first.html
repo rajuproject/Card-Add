@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="plus" onclick="decrase(true)">+</button>
+  <input type="text" value="00" id="result">
+  <button id="minus" onclick="decrase(false)">-</button>
+  <button id="mut"> 40</button>
+  <div>
+    <button id="plu">+</button>
+    <input type="text" value="00" id="resul">
+    <button id="minu">-</button>
+    <button id="mu"> 50</button>
+  </div>
+  <script>
+    function handleProductChange(product, isIncrease){
+      const producInput = document.getElementById(product);
+      const productCount = parseInt(producInput.value);
+      let productNewCount = productCount;
+      if(isIncrease==true){
+        productNewCount = productCount + 1;
+      }
+      if( isIncrease == false && productCount > 0){
+        productNewCount = productCount - 1;
+      }
+      producInput.value = productNewCount;
+      let productNewCount = 0;
+      if( product == phone){
+        productTotal = productNewCount*30;
+      }
+      if( product == case){
+        productTotal= productNewCount*35;
+      }
+      let total= productNewCount*productTotal;
+      document.getElementById("amount").innerText= "$"+ total;
+    }
+    function calculate(product){
+      const netAmount= document.getElementById(product);
+      const totalAmount = parseInt(netAmount.value);
+      const amount = total 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     document.getElementById("plus").addEventListener('click', function(){
+//      const amount = document.getElementById("result");
+//     const tk = parseInt(amount.value);
+//      const total = tk + 1;
+//      amount.value = total;
+//    am = total*40;
+//    document.getElementById('mut').innerText = am;
+//  });
+//   document.getElementById("minus").addEventListener('click', function(){
+//      const amount = document.getElementById("result");
+//     const tk = parseInt(amount.value);
+//      const total = tk - 1;
+//    if(total== 0){
+//        return 0}
+//      amount.value = total;
+//      const am = total*40;
+//   const r = document.getElementById('mut').innerText = am;
+  
+    
+  //  });
+//    document.getElementById("plu").addEventListener('click', function(){
+//      const amount = document.getElementById("resul");
+//     const tk = parseInt(amount.value);
+//      const total = tk + 1;
+//      amount.value = total;
+//    am = total*50;
+//    document.getElementById('mu').innerText = am;
+//  });
+//   document.getElementById("minu").addEventListener('click', function(){
+//      const amount = document.getElementById("resul");
+//     const tk = parseInt(amount.value);
+//      const total = tk - 1;
+//    if(total== 0){
+//        return 0}
+//      amount.value = total;
+//   const r = document.getElementById('mu');
+//       const am = total*50;
+//      r.value = am;
+//    });
+    
+    
+
+    
+  </script>
+</body>
+</html>

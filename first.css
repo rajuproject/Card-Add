@@ -1,0 +1,38 @@
+.footer{
+  width: 100%;
+  background-color: #fff;
+  color: #666666;
+  font-family: Georgia, serif;
+}
+.container{
+  padding: 20px 30px;
+  display: flex;
+}
+.child{
+  width: 22%;
+  margin-top: 0;
+  margin-right: 43px;
+  
+}
+.child .top{
+  font-family: 16px;
+  border-top: 1px solid #666666;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-left: 0;
+}
+.child p{
+  font-size: 12px;
+  line-height: 18px;
+}
+.child p span{
+  color: red;
+}
+.child ul{
+  list-style: none;
+  padding: 0;
+}
+.child ul li{
+  margin-left: 0;
+}
